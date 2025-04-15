@@ -12,6 +12,7 @@
         <p>{{ fruits.name }}</p>
         <p>{{ fruits.color }}</p>
         <a href="{{ path('fruits') }}">retour à l'accueil</a>
+        <a href="{{ path('delete_fruit', { id:fruits.id}) }}">supp</a>
     </div>
 
 {% endblock %}

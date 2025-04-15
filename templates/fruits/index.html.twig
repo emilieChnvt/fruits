@@ -15,6 +15,8 @@
         <p>{{ fruit.name }}</p>
         <p>{{ fruit.color }}</p>
         <a href="{{ path('show_fruit',{id : fruit.id}) }}">voir plus</a>
+        <a href="{{ path('delete_fruit', { id:fruit.id}) }}">supp</a>
+
     </div>
 {% endfor %}
 {% endblock %}
