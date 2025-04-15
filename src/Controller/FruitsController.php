@@ -19,7 +19,7 @@ final class FruitsController extends AbstractController
         ]);
     }
 
-    #[Route('/fruits/show/{id}', name: 'show_fruits')]
+    #[Route('/fruits/show/{id}', name: 'show_fruit')]
     public function show(Fruits $fruits): Response
     {
         return $this->render('fruits/show.html.twig', [

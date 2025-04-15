@@ -1,9 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello FruitsController!{% endblock %}
-
 {% block body %}
-{% for fruit in fruits %}
     <style>
         .border{
             border:1px solid black;
@@ -12,9 +9,12 @@
         }
     </style>
     <div class="border">
-        <p>{{ fruit.name }}</p>
-        <p>{{ fruit.color }}</p>
-        <a href="{{ path('show_fruit',{id : fruit.id}) }}">voir plus</a>
+        <p>{{ fruits.name }}</p>
+        <p>{{ fruits.color }}</p>
+        <a href="{{ path('fruits') }}">retour à l'accueil</a>
     </div>
-{% endfor %}
+
 {% endblock %}
+
+
+
